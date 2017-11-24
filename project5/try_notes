@@ -1,0 +1,43 @@
+#Author: Jing Wang, for Program Design
+# try_notes is a Unix shell script that will be used to test project 5, problem #1.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_notes
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_notes
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+Meet me at the cafeteria
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Input: Meet me at the cafeteria'
+echo 'Output: Nvvg nv zg gsv xzuvgvirz'
+#
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+We are discovered.
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Input: We are discovered.' 
+echo 'Output: Dv ziv wrhxlevivw.' 
+#
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+Flee now!
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Input: Flee now!' 
+echo 'Output: Uovv mld!' 
+#
+echo '===================================================='
+#
+

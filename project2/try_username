@@ -1,0 +1,59 @@
+#iAuthor: Jing Wang, for Program Design
+# try_username is a Unix shell script that will be used to test project 2, problem #2.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_username
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_username
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+Hi there
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the username: Hi there'
+echo 'Output: input is invalid'
+#
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+forgive,me 
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the username: forgive,me' 
+echo 'Output: input is invalid' 
+#
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+zone8
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the message: zone8'
+echo 'Output: valid input' 
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+DaveStuartKevin
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the message: DaveStuartKevin'
+echo 'Output: input is invalid' 
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+Tim
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the message: Tim'
+echo 'Output: input is invalid' 
+echo '===================================================='
+#

@@ -1,0 +1,158 @@
+# Author: Jing Wang, for Program Design
+# try_cars2 is a Unix shell script that will be used to test the cars program.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_cars2
+# Compile your program, producing a.out as the executable
+# To run the script, type
+# ./try_cars2
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+
+echo '===================================================='
+#
+./dealer <<-EndOfInput
+a
+ford
+taurus
+red
+2015
+22
+32
+5
+a
+ford
+taurus
+blue
+2015
+20
+29
+9
+a
+jeep
+wrangler
+green
+2013
+17
+21
+3
+a
+ford
+taurus
+red
+2015
+22
+32
+8
+a
+ford
+escape
+black
+2016
+23
+32
+7
+a
+toyota
+camry
+silver
+2009
+21
+31
+4
+a
+ford
+escape
+black
+2006
+24
+29
+7
+a
+ford
+escape
+black
+2012
+23
+28
+7
+p
+q
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter operation code: a'
+echo 'Enter make: ford'
+echo 'Enter model: taurus'
+echo 'Enter color: red'
+echo 'Enter year: 2015'
+echo 'Enter city mpg: 22'
+echo 'Enter highway mpg: 32'
+echo 'Enter quantity: 5'
+echo 'Enter operation code: a'
+echo 'Enter make: ford'
+echo 'Enter model: taurus'
+echo 'Enter color: blue'
+echo 'Enter year: 2015'
+echo 'Enter city mpg: 20'
+echo 'Enter highway mpg: 29'
+echo 'Enter quantity: 9'
+echo 'Enter operation code: a'
+echo 'Enter make: jeep'
+echo 'Enter model: wrangler'
+echo 'Enter color: green'
+echo 'Enter year: 2013'
+echo 'Enter city mpg: 17'
+echo 'Enter highway mpg: 21'
+echo 'Enter quantity: 3'
+echo 'Enter operation code: a'
+echo 'Enter make: ford'
+echo 'Enter model: taurus'
+echo 'Enter color: red'
+echo 'Enter year: 2015'
+echo 'Enter city mpg: 22'
+echo 'Enter highway mpg: 32'
+echo 'Enter quantity: 5'
+echo 'car laready exisits.'
+echo 'Enter operation code: a'
+echo 'Enter make: ford'
+echo 'Enter model: escape'
+echo 'Enter color: black'
+echo 'Enter year: 2016'
+echo 'Enter city mpg: 23'
+echo 'Enter highway mpg: 32'
+echo 'Enter quantity: 7'
+echo 'Enter operation code: a'
+echo 'Enter make: toyota'
+echo 'Enter model: camry'
+echo 'Enter color: silver'
+echo 'Enter year: 2009'
+echo 'Enter city mpg: 21'
+echo 'Enter highway mpg: 31'
+echo 'Enter quantity: 4'
+echo 'Enter operation code: a'
+echo 'Enter make: ford'
+echo 'Enter model: escape'
+echo 'Enter color: black'
+echo 'Enter year: 2006'
+echo 'Enter city mpg: 24'
+echo 'Enter highway mpg: 29'
+echo 'Enter quantity: 7'
+echo 'Enter operation code: a'
+echo 'Enter make: ford'
+echo 'Enter model: escape'
+echo 'Enter color: black'
+echo 'Enter year: 2012'
+echo 'Enter city mpg: 23'
+echo 'Enter highway mpg: 28'
+echo 'Enter quantity: 7'
+echo 'Enter operation code: p'
+echo 'Make    Model    Color   Year    City   Highway  Quantity'
+echo 'ford    escape   black   2006    24      29      7'
+echo 'ford    escape   black   2012    23      28      7'
+echo 'ford    escape   black   2016    23      32      7'
+echo 'ford    taurus   blue    2017    20      29      9'
+echo 'ford    taurus   red     2015    22      32      5'
+echo 'jeep    wrangler green   2013    17      21      3'
+echo 'toyota  camry    silver  2009    21      31      4'
+echo 'Enter operation code: q'

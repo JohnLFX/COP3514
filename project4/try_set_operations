@@ -1,0 +1,48 @@
+# Author: Jing Wang, for Program Design
+# try_set_operations is a Unix shell script that will be used to test project 3.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_set_operations
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_set_operations
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+3
+1 9 3
+4
+1 8 9 7
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please enter the number of elements in set A: 3'
+echo 'Enter the numbers in set A: 1 9 3'
+echo 'Please enter the number of elements in set B: 4'
+echo 'Enter the numbers in set A: 1 8 9 7'
+echo 'Difference of A and B: 3'
+echo 'Complement of A: 0 2 4 5 6 7 8'
+echo 'Complement of B: 0 2 3 4 5 6'
+#
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+4
+5 9 4 7
+1
+6
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please enter the number of elements in set A: 4'
+echo 'Enter the numbers in set A: 5 9 4 7'
+echo 'Please enter the number of elements in set B: 1'
+echo 'Enter the numbers in set A:  6'
+echo 'Difference of A and B: 4 5 7 9'
+echo 'Complement of A: 0 1 2 3 6 8'
+echo 'Complement of B: 0 1 2 3 4 5 7 8 9'
+#
+echo '===================================================='
+#

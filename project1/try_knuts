@@ -1,0 +1,72 @@
+# Written by Jing Wang for Program Design
+# try_knuts is a Unix shell script that will be used to test project 1.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_knuts
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_knuts
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+0
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter a knuts amount: 0'
+echo 'Galleons: 0'
+echo 'Sickles: 0'
+echo 'Knuts: 0'
+echo '===================================================='
+./a.out <<-EndOfInput
+938
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter a knuts amount: 938'
+echo 'Galleons: 1'
+echo 'Sickles: 15'
+echo 'Knuts: 10'
+echo '===================================================='
+./a.out <<-EndOfInput
+5974
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter a knuts amount: 5974'
+echo 'Galleons: 12'
+echo 'Sickles: 2'
+echo 'Knuts: 0'
+echo '===================================================='
+./a.out <<-EndOfInput
+1000000000
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter a knuts amount: 1000000000'
+echo 'Galleons: 2028397'
+echo 'Sickles: 9'
+echo 'Knuts: 18'
+echo '===================================================='
+./a.out <<-EndOfInput
+1000000001
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter a knuts amount: 1000000001'
+echo 'Invalid amount 1000000001'
+echo 'Amount must be between 0 and 1000000000, inclusive'
+echo '===================================================='
+./a.out <<-EndOfInput
+-1
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter a knuts amount: -1'
+echo 'Invalid amount -1'
+echo 'Amount must be between 0 and 1000000000, inclusive'
+echo '----------------------------------------------------'
+
+
+

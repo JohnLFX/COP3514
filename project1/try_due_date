@@ -1,0 +1,73 @@
+# Written by Jing Wang for Program Design
+# try_due__day is a Unix shell script.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_due_date
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_due_date
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+10 9
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the day for today (0 for Sunday, 1 for Monday, ect: 10'
+echo 'Invalid input. The day should be in the range of 0 to 6.'
+#
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+-5 9
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the day for today (0 for Sunday, 1 for Monday, ect: -5'
+echo 'Invalid input. The day should be in the range of 0 to 6.'
+#
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+0 6
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the day for today (0 for Sunday, 1 for Monday, ect: 0'
+echo 'Enter the number of days to do the work: 6'
+echo 'The work is due on Monday. The number of days until its due is 8.'
+#
+echo '===================================================='
+./a.out <<-EndOfInput
+2 17
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the day for today (0 for Sunday, 1 for Monday, ect: 2'
+echo 'Enter the number of days to do the work: 17'
+echo 'The work is due on Monday. The number of days until its due is 20.'
+#
+echo '===================================================='
+./a.out <<-EndOfInput
+4 24
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the day for today (0 for Sunday, 1 for Monday, ect: 4'
+echo 'Enter the number of days to do the work: 24'
+echo 'The work is due on Monday. The number of days until its due is 25.'
+#
+echo '===================================================='
+./a.out <<-EndOfInput
+4 14
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the day for today (0 for Sunday, 1 for Monday, ect: 4'
+echo 'Enter the number of days to do the work: 14'
+echo 'The work is due on Thursday. The number of days until its due is 14.'
+#
+echo '===================================================='
+

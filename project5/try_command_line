@@ -1,0 +1,44 @@
+# Author: Jing Wang, for Program Design
+# try_command_line is a Unix shell script that will be used to test project 5.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_command_line
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_command_line
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out
+#
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Invaild number of arguments. Usage: ./a.out -a (or -m) followed by 10 integers'
+#
+echo '===================================================='
+#
+./a.out -a 10 9 23 24 559 20 84 12 48 98
+#
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Average: 88.700000'
+#
+echo '===================================================='
+#
+./a.out -m 8 12 42 10 89 4 1 39 102 3
+#
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Median: 12'
+#
+echo '===================================================='
+#
+./a.out -h 8 12 42 10 89 4 1 39 102 3
+#
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Invalid option'
+#
+echo '===================================================='
+#

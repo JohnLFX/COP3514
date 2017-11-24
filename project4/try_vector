@@ -1,0 +1,57 @@
+# Author: Jing Wang, for Program Design
+# try_vector is a Unix shell script that will be used to test project 6.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_vector
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_vector
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+3
+1 2 3
+4 5 6
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the vectors: 3'
+echo 'Enter the first vector: 1 2 3'
+echo 'Enter the second vector: 4 5 6'
+echo 'The multiplication of the vectors is: 4 10 18'
+echo 'The vectors are not the same.'
+#
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+5
+3 2 4 7 1
+1 4 5 8 7
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the vectors: 5'
+echo 'Enter the first vector: 3 2 4 7 1'
+echo 'Enter the second vector: 1 4 5 8 7'
+echo 'The multiplication of the vectors is: 3 8 20 56 7'
+echo 'The vectors are not the same.'
+#
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+3
+4 5 6
+4 5 6
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the vectors: 3'
+echo 'Enter the first vector: 4 5 6'
+echo 'Enter the second vector: 4 5 6'
+echo 'The multiplication of the vectors is: 16 25 36'
+echo 'The vectors are the same.'
+#
+echo '===================================================='
+

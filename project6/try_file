@@ -1,0 +1,31 @@
+#test script for project 7
+#Author: Jing Wang, for Program Design
+#To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_file
+# Compile your program, producing a.out as the executable
+# To run the script, type
+# ./try_file
+# The user input will not be shown on the screen
+./a.out <<-EndOfInput
+words.txt
+EndOfInput
+#
+cat words.txt.ang
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter file name: words.txt'
+echo '1	inch'
+echo '	chin'
+echo '2	roast beef'
+echo '	eat for BSE'
+echo '3	William Shakespeare'
+echo '	I am a weakish speller'
+echo '4	Madam Curie'
+echo '	Radium came'
+echo '5	lake'
+echo '	leak'
+echo '6	Heir'
+echo '	hire'
+echo '===================================================='
+#

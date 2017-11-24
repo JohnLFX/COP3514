@@ -1,0 +1,34 @@
+# Author:  Jing Wang,  for Program Design
+# try_words is a Unix shell script that will be used to test project 10.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_words
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_words
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out hello darkness my old friend<<-EndOfInput
+EndOfInput
+echo "----------------------------------------------------"
+echo "Expected:"
+echo "darkness friend hello my old"
+echo "----------------------------------------------------"
+#
+./a.out Hello darkness my old friend<<-EndOfInput
+EndOfInput
+echo "----------------------------------------------------"
+echo "Expected:"
+echo "Hello darkness friend my old"
+echo "----------------------------------------------------"
+#
+./a.out The sound of silence<<-EndOfInput
+EndOfInput
+echo "----------------------------------------------------"
+echo "Expected:"
+echo "The of silence sound"
+echo "----------------------------------------------------"
+echo "===================================================="
+
